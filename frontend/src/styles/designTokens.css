@@ -1,0 +1,69 @@
+:root {
+  /* Color palette */
+  --color-bg-primary: #030308;
+  --color-bg-surface: #0A0A16;
+  --color-bg-elevated: #121226;
+  --color-border-default: #1c1c36;
+  --color-border-bright: #2e2e54;
+  --color-primary: #5D3DE8;
+  --color-primary-light: #8066FF;
+  --color-primary-dark: #3A20B0;
+  --color-primary-glow: rgba(93, 61, 232, 0.4);
+  --color-accent: #00F0FF;
+  --color-accent-glow: rgba(0, 240, 255, 0.3);
+  --color-streak: #FF3C38;
+  --color-streak-glow: rgba(255, 60, 56, 0.35);
+  --color-success: #10B981;
+  --color-error: #F43F5E;
+  --color-warning: #F59E0B;
+  --color-text-primary: #F3F4F6;
+  --color-text-secondary: #A1A1AA;
+  --color-text-muted: #52525B;
+
+  /* Typography */
+  --font-display: 'Syne', sans-serif;
+  --font-body: 'Plus Jakarta Sans', sans-serif;
+
+  /* Shadows */
+  --shadow-glow: 0 0 24px var(--color-primary-glow);
+  --shadow-glow-strong: 0 0 40px rgba(93, 61, 232, 0.6);
+  --shadow-glow-accent: 0 0 24px var(--color-accent-glow);
+  --shadow-glow-streak: 0 0 24px var(--color-streak-glow);
+  --shadow-card: 0 12px 32px -4px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  --shadow-elevated: 0 24px 64px -12px rgba(0, 0, 0, 0.8), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  --shadow-glass: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+
+  /* Transition timings */
+  --duration-short: 0.2s;
+  --duration-medium: 0.4s;
+  --duration-long: 0.6s;
+}
+
+/* Global resets and base styles */
+html, body {
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  font-family: var(--font-body);
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+/* Utility classes */
+.bg-primary { background-color: var(--color-bg-primary); }
+.bg-surface { background-color: var(--color-bg-surface); }
+.bg-elevated { background-color: var(--color-bg-elevated); }
+.text-primary { color: var(--color-text-primary); }
+.text-secondary { color: var(--color-text-secondary); }
+.text-muted { color: var(--color-text-muted); }
+.border-default { border-color: var(--color-border-default); }
+.border-bright { border-color: var(--color-border-bright); }
+
+/* Glass effect */
+.glass {
+  backdrop-filter: blur(12px) saturate(180%);
+  -webkit-backdrop-filter: blur(12px) saturate(180%);
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  box-shadow: var(--shadow-glass);
+}
