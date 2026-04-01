@@ -5,7 +5,7 @@
 ## Overview
 **Logic Looper** is a sophisticated, high-end daily logic puzzle platform built with a modern, cinematic UI/UX. It offers players a curated selection of brain-teasers that refresh every 24 hours, including Pattern Match, Deduction Grids, and more.
 
-Designed with a **$10,000-value aesthetic**, the application features:
+The application features:
 - **Cinematic Motion**: High-impact animations via Framer Motion.
 - **Glassmorphism Design**: A sleek, modern aesthetic with translucent layers and vibrant gradients.
 - **Dynamic Puzzles**: Unique puzzles generated daily based on a secure date-based seeding algorithm.
